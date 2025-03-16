@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Resume Challenge</title>
+    <title>My Resume Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
+            color: #333;
         }
         header {
-            background-color: #0073e6;
+            background-color: #0056b3;
             color: white;
             text-align: center;
-            padding: 30px;
+            padding: 40px;
         }
         h1 {
             margin: 0;
         }
         section {
-            margin: 20px;
+            margin: 20px auto;
             padding: 20px;
             background-color: white;
-            border-radius: 8px;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #333;
+            color: #0056b3;
         }
         .card {
-            background-color: #f1f1f1;
+            background-color: #e8f0ff;
             padding: 15px;
             margin-bottom: 10px;
             border-radius: 8px;
@@ -40,9 +43,9 @@
             padding: 0;
         }
         .skills-list li, .projects-list li {
-            padding: 5px;
-            background-color: #eef;
-            margin-bottom: 8px;
+            padding: 8px;
+            background-color: #d0e4ff;
+            margin-bottom: 6px;
             border-radius: 5px;
         }
         footer {
@@ -54,65 +57,59 @@
         .contact-info {
             text-align: center;
         }
+        .profile-photo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 150px;
+            color: #555;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <h1>Welcome to My Cloud Resume Challenge</h1>
-        <p>Jaspreet Taggar | Certified Azure Administrator | DevOps Enthusiast</p>
+        <h1>Welcome to My Resume</h1>
+        <p>Jaspreet Taggar | Mainframe Developer | Cloud Enthusiast</p>
     </header>
 
     <!-- About Me Section -->
     <section>
         <h2>About Me</h2>
-        <p>Hello! I'm Jaspreet Taggar passionate about building scalable and resilient applications using cloud technologies. I have expertise in cloud platforms like Azuew, DevOps tools, and infrastructure automation.</p>
+        <div class="profile-photo"><img src="my_image.HEIC" class="profile-photo"></div>
+        <p>Hello! I'm Jaspreet Taggar, a seasoned Mainframe Developer with over a decade of experience.  
+        Recently, I have been expanding my expertise into cloud technologies and DevOps.  
+        I hold an AZ-104 Azure Administrator Certification and love exploring infrastructure automation.</p>
     </section>
 
     <!-- Skills Section -->
     <section>
         <h2>My Skills</h2>
         <div class="card">
-            <h3>Cloud Technologies</h3>
+            <h3>Mainframe Development</h3>
             <ul class="skills-list">
-                <li>Azure</li>
-                <li>IBM Mainframe Developer</li>
+                <li>COBOL</li>
+                <li>JCL</li>
+                <li>DB2</li>
+                <li>CICS</li>
+                <li>TSO/ISPF</li>
             </ul>
         </div>
         <div class="card">
-            <h3>DevOps & Automation</h3>
+            <h3>Cloud & DevOps</h3>
             <ul class="skills-list">
+                <li>Azure</li>
                 <li>Docker</li>
                 <li>Kubernetes</li>
                 <li>Terraform</li>
-                <li>CI/CD (GitHub Actions, Jenkins)</li>
+                <li>CI/CD Pipelines</li>
             </ul>
-        </div>
-        <div class="card">
-            <h3>Programming & Scripting</h3>
-            <ul class="skills-list">
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>Shell Scripting</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section>
-        <h2>My Projects</h2>
-        <div class="card">
-            <h3>Project 1: Cloud-Native Application</h3>
-            <p>This project involves building a cloud-native application using AWS Lambda, DynamoDB, and S3 for storage.</p>
-        </div>
-        <div class="card">
-            <h3>Project 2: Infrastructure as Code</h3>
-            <p>Automated the creation of AWS infrastructure using Terraform, including VPC, EC2 instances, and RDS databases.</p>
-        </div>
-        <div class="card">
-            <h3>Project 3: CI/CD Pipeline Setup</h3>
-            <p>Configured a CI/CD pipeline with GitHub Actions to automate deployments of a web application to AWS.</p>
         </div>
     </section>
 
@@ -128,7 +125,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Jaspreet Taggar - Cloud Resume Challenge</p>
+        <p>&copy; 2025 Jaspreet Taggar - My Resume Website</p>
     </footer>
 
 </body>
