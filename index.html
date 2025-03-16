@@ -32,17 +32,32 @@
         h2 {
             color: #0056b3;
         }
+        .about-container {
+            display: flex;
+            align-items: center;
+        }
+        .profile-photo {
+            width: 180px;
+            height: 250px;
+            background-color: #ddd;
+            text-align: center;
+            line-height: 250px;
+            color: #555;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
         .card {
             background-color: #e8f0ff;
             padding: 15px;
             margin-bottom: 10px;
             border-radius: 8px;
         }
-        .skills-list, .projects-list {
+        .skills-list {
             list-style-type: none;
             padding: 0;
         }
-        .skills-list li, .projects-list li {
+        .skills-list li {
             padding: 8px;
             background-color: #d0e4ff;
             margin-bottom: 6px;
@@ -57,18 +72,6 @@
         .contact-info {
             text-align: center;
         }
-        .profile-photo {
-            display: block;
-            margin: 0 auto 20px;
-            width: 150px;
-            height: 150px;
-            background-color: #ddd;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 150px;
-            color: #555;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
@@ -82,10 +85,12 @@
     <!-- About Me Section -->
     <section>
         <h2>About Me</h2>
-        <div class="profile-photo"><img src="my_image.HEIC" class="profile-photo"></div>
-        <p>Hello! I'm Jaspreet Taggar, a seasoned Mainframe Developer with over a decade of experience.  
-        Recently, I have been expanding my expertise into cloud technologies and DevOps.  
-        I hold an AZ-104 Azure Administrator Certification and love exploring infrastructure automation.</p>
+        <div class="about-container">
+            <div class="profile-photo">my_image.HEIC</div>
+            <p>Hello! I'm Jaspreet Taggar, a seasoned Mainframe Developer with over a decade of experience.  
+            Recently, I have been expanding my expertise into cloud technologies and DevOps.  
+            I hold an AZ-104 Azure Administrator Certification and love exploring infrastructure automation.</p>
+        </div>
     </section>
 
     <!-- Skills Section -->
