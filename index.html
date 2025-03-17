@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume Website</title>
+    <title>Jaspreet Taggar | Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
             color: #333;
@@ -18,23 +18,18 @@
             text-align: center;
             padding: 40px;
         }
-        h1 {
-            margin: 0;
-        }
-        section {
+        .container {
+            max-width: 900px;
             margin: 20px auto;
+            background: white;
             padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            max-width: 800px;
+            border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #0056b3;
         }
         .about-container {
             display: flex;
             align-items: center;
+            gap: 20px;
         }
         .profile-photo {
             width: 180px;
@@ -44,8 +39,9 @@
             line-height: 250px;
             color: #555;
             font-weight: bold;
-            margin-right: 20px;
-            flex-shrink: 0;
+        }
+        h2 {
+            color: #0056b3;
         }
         .card {
             background-color: #e8f0ff;
@@ -53,11 +49,11 @@
             margin-bottom: 10px;
             border-radius: 8px;
         }
-        .skills-list {
+        .skills-list, .experience-list {
             list-style-type: none;
             padding: 0;
         }
-        .skills-list li {
+        .skills-list li, .experience-list li {
             padding: 8px;
             background-color: #d0e4ff;
             margin-bottom: 6px;
@@ -69,68 +65,89 @@
             background-color: #333;
             color: white;
         }
-        .contact-info {
-            text-align: center;
-        }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
-        <h1>Welcome to My Resume</h1>
-        <p>Jaspreet Taggar | Mainframe Developer | Cloud Enthusiast</p>
+        <h1>Jaspreet Taggar | Mainframe & Cloud Engineer</h1>
+        <p>Experienced Mainframe Developer transitioning into Cloud & DevOps</p>
     </header>
 
-    <!-- About Me Section -->
-    <section>
-        <h2>About Me</h2>
-        <div class="about-container">
-            <div class="profile-photo"><img src="my_image.HEIC" class="profile-photo"></div>
-            <p>Hello! I'm Jaspreet Taggar, a seasoned Mainframe Developer with over a decade of experience.  
-            Recently, I have been expanding my expertise into cloud technologies and DevOps.  
-            I hold an AZ-104 Azure Administrator Certification and love exploring infrastructure automation.</p>
-        </div>
-    </section>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="profile-photo"><img src="my_image.HEIC" class="profile-photo"></div>
+                <p>With over a decade of expertise in mainframe technologies, including COBOL, DB2, and IBM Db/DC, I have successfully led and delivered high-impact projects. Now transitioning into cloud technologies, I am certified in AZ-104 and expanding my skillset in Azure, DevOps, and Infrastructure as Code.</p>
+            </div>
+        </section>
 
-    <!-- Skills Section -->
-    <section>
-        <h2>My Skills</h2>
-        <div class="card">
-            <h3>Mainframe Development</h3>
+        <section>
+            <h2>Skills & Tools</h2>
+            <div class="card">
+                <h3>Mainframe Technologies</h3>
+                <ul class="skills-list">
+                    <li>COBOL, JCL, SAS, SQL</li>
+                    <li>DB2, IMS DB/DC, VSAM, CICS</li>
+                    <li>ISPF z/OS, Endeavor, INSYNC, TSO, VSCode & Zowe, ChangeMan</li>
+                    <li>File-Aid, CA7, SAR, Test4Z, Github with Actions, IDZ </li>
+                    <li>ADDI, AWS, IBM Z Explorer, dbvizualizer, Intertest, APA</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Cloud & DevOps</h3>
+                <ul class="skills-list">
+                    <li>Azure (Certified AZ-104)</li>
+                    <li>Docker, Kubernetes, Terraform</li>
+                    <li>CI/CD Pipelines, GitHub Actions, Jenkins</li>
+                    <li>Infrastructure as Code, Automation, Cloud Security</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <div class="card">
+                <h3>TD Bank Group - Software Engineer II (Nov 2022 - Present)</h3>
+                <ul class="experience-list">
+                    <li>Leading the design and delivery of OCA/CAP applications.</li>
+                    <li>Managing compliance, architecture reviews, and cloud adoption.</li>
+                    <li>Driving projects in Regional Realignment, Bill 64, and Phoenix.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Cognizant Technology Solutions - Technical Lead (Jan 2022 - Oct 2022)</h3>
+                <ul class="experience-list">
+                    <li>Migrated trust accounting solution from AddVantage to Global Plus.</li>
+                    <li>Developed new mainframe slim app for inbound file processing.</li>
+                    <li>Integrated SFTP connectivity and decommissioned legacy apps.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Previous Roles</h3>
+                <ul class="experience-list">
+                    <li>JP Morgan Chase - Senior Mainframe Developer (2021 - 2021)</li>
+                    <li>Tata Consultancy - Senior Mainframe Developer (2019 - 2021)</li>
+                    <li>Nordea Bank - Mainframe Developer (2017 - 2019)</li>
+                    <li>Morgan Stanley - Mainframe Developer (2013 - 2017)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
             <ul class="skills-list">
-                <li>COBOL</li>
-                <li>JCL</li>
-                <li>DB2</li>
-                <li>CICS</li>
-                <li>TSO/ISPF</li>
+                <li>AZ-104 Microsoft Azure Administrator</li>
+                <li>Professional Scrum Master - I</li>
+                <li>ITIL v3 Foundation</li>
+                <li>Oracle 11g SQL Fundamentals</li>
             </ul>
-        </div>
-        <div class="card">
-            <h3>Cloud & DevOps</h3>
-            <ul class="skills-list">
-                <li>Azure</li>
-                <li>Docker</li>
-                <li>Kubernetes</li>
-                <li>Terraform</li>
-                <li>CI/CD Pipelines</li>
-            </ul>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- Contact Information Section -->
-    <section>
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:jaspreet.taggar@outlook.com">jaspreet.taggar@outlook.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/jaspreet-taggar-955a8181/" target="_blank">Jaspreet Taggar</a></p>
-            <p>GitHub: <a href="https://github.com/JTaggar/" target="_blank">JTaggar</a></p>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Jaspreet Taggar - My Resume Website</p>
+        <p>&copy; 2025 Jaspreet Taggar - Resume Website</p>
     </footer>
 
 </body>
